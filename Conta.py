@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 
 class Conta:
-    saldo = 0.0
+    __saldo = 0.0
 
     def __init__(self, valor):
         self.setSaldo(valor)
@@ -17,7 +17,7 @@ class Conta:
         outra.doCredito(valor)
 
     def getSaldo(self):
-        return self.saldo
+        return self.__saldo
 
     def setSaldo(self, saldo):
-        self.saldo = saldo
+        self.__saldo = saldo
